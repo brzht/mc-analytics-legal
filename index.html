@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mc-analytics — Maincast</title>
+<meta name="description" content="Internal analytics tool of Maincast: collects statistics of Maincast's own social media channels and shows them on one dashboard.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5b6270; --line: #e4e7ec; --accent: #1c4ed8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1013; --fg: #e8eaee; --muted: #9aa3b2; --line: #262b33; --accent: #7aa2ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 72px 16px 96px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 17px; margin: 36px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin: 0 0 6px; }
+  a { color: var(--accent); }
+  .links { margin: 32px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); }
+  .links a { display: inline-block; margin-right: 20px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>mc-analytics</h1>
+  <p class="sub">Internal analytics tool of Maincast.</p>
+
+  <p>Maincast runs esports and sports broadcasts and publishes them across several social platforms. mc-analytics collects statistics of <strong>Maincast's own channels</strong> — live viewers, views of videos and posts, reactions, comments and follower counts — stores them as a long time series and shows them on one internal dashboard.</p>
+
+  <p>The platforms themselves keep only a short history: a live viewer count exists only while the stream is running, and stream archives disappear after weeks. The tool records those numbers as they happen so the team can see how a channel changes over months.</p>
+
+  <h2>What it does with a connected account</h2>
+  <ul>
+    <li>Reads statistics of that account on a schedule.</li>
+    <li>Nothing else: it never posts, comments, messages, follows or changes anything.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <p>Maincast staff only. There is no public sign-up, and the data is not resold or shared.</p>
+
+  <div class="links">
+    <a href="terms.html">Terms of Use</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <footer>
+    Maincast · <a href="mailto:info@maincast.com">info@maincast.com</a>
+  </footer>
+</main>
+</body>
+</html>
